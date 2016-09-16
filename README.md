@@ -1,4 +1,4 @@
-# (Experiment) MathJax to PDF Conversion
+# (Experiment) MathJax in PDF
 
 ![Screenshot](screenshot.png)
 
