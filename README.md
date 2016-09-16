@@ -1,4 +1,7 @@
 # (Experiment) MathJax to PDF Conversion
+
+![Screenshot](screenshot.png)
+
 Try to render MathJax in pure HTML/CSS for use in environments without JS.
 
 This experiment is part of [my project](https://paper.dropbox.com/doc/Markdown-to-PDF-xTMXMPHv0dM3rQDIJERgf) at [NTUOSC](https://ntuosc.org/), trying to write and publish documents of simple structure in Markdown and PDF formats. One of the features is the support of LaTeX math expressions, especially for people (including myself) who are going to use this tool to write some technical reports.
