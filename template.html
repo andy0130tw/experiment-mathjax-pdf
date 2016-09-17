@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Test</title>
+  <title>{{ title }}</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="github-markdown.css">
+  {{ metadata }}
+  <link rel="stylesheet" href="res/css/github-markdown.css">
   <style type="text/css">
-    html, body {
-      font-family: 'Roboto', sans-serif;
+    html, body, .markdown-body {
+      font-family: Roboto, sans-serif;
     }
     .container {
       margin: 0 auto;
       padding-bottom: 64px;
-      max-width: 992px;
     }
     .mjx-chtml {
-      font-size: 115%;
+      font-size: 110%;
     }
   </style>
   <style type="text/css">

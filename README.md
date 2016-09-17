@@ -18,6 +18,8 @@ The document `doc.md` is converted to HTML by [Markdown-it](https://markdown-it.
 npm install                  # install dependencies
 node index.js                # produce output.html
 prince output.html test.pdf  # produce test.pdf
+# alternatively you can add the stylesheet for "Paged Media"
+prince output.html test.pdf -s res/css/paged-media.css
 ```
 
 # Known Issues (as for now) / To-dos

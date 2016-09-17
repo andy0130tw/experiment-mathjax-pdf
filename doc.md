@@ -1,3 +1,11 @@
+---
+title: Gibbs Phenomenon
+author: Andy Pan (Qbane)
+date: "2016-03-10"
+description: This is a test document on MathJax support on various platforms, mainly on printed material.
+subject: Test
+---
+
 # Gibbs Phenomenon
 
 By Andy Pan (Qbane), 2016/3/10. (See [Gist](https://gist.github.com/andy0130tw/361531904c6909da8b86) for revision history.)

@@ -1,0 +1,10 @@
+@page {
+  size: A4;
+  margin: .75in 1in;
+
+  @bottom-center {
+    content: counter(page);
+    font-size: .8rem;
+    font-family: 'Roboto Mono';
+  }
+}
