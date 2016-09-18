@@ -27,5 +27,6 @@ prince output.html test.pdf -s res/css/paged-media.css
   * Super-slow in both convertions, MathJax and PrinceXML.
   * Output format: HTML-CSS is preferable, but failed with a timeout. Use CommonHTML instead.
   * Should provide customizable font paths.
+  * Make some adjustments to CSS stylesheets for printing.
   * More verbose on progress.
-  * Some typesetting issues like the fraction bar (?). MathJax is intended to be run in browser because [it need context to apply workarounds](https://groups.google.com/forum/#!msg/mathjax-users/O--eKm9elRU/zNZx24gnI3gJ). Will try to adjust or patch settings accordingly to the result of Prince.
+  * Some typesetting issues in MathJax like the fraction bar (?). MathJax is intended to be run in browser because [it need context to apply workarounds](https://groups.google.com/forum/#!msg/mathjax-users/O--eKm9elRU/zNZx24gnI3gJ). Will try to adjust or patch settings accordingly to the result of Prince.
