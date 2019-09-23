@@ -1,10 +1,8 @@
 const fs = require('fs');
 
 const MarkdownIt = require('markdown-it');
-const Promise = require('bluebird');
 const matter = require('gray-matter');
-const mathJax = require('mathjax-node/lib/mj-page');
-// const mathJax = require('mathjax-node/lib/mj-single');
+const mjpage = require('mathjax-node-page').mjpage;
 
 function getMetaTitle(data) {
   if (!data.hasOwnProperty('title')) return '';
@@ -42,7 +40,7 @@ var md = MarkdownIt({
     html: true,
     breaks: true,
     // typographer: true
-}).use(require('markdown-it-mathjax'));
+}).use(require('markdown-it-mathjax')());
 
 var doc = fs.readFileSync('doc.md', 'utf-8');
 var template = fs.readFileSync('template.html', 'utf-8');
@@ -64,29 +62,19 @@ template = template
 
 console.log(meta);
 
-mathJax.config({
+mjpage(docParsed, {  // mjpageConfig
+  format: ['TeX'],
+  output: 'html',
+  singleDollars: true,
+  displayErrors: true,
   MathJax: {
-    // config
-  }
-});
 
-mathJax.start();
-
-mathJax.typeset({
-  // math: docParsed,
-  // format: 'TeX',
-  // html: true,
-  // css: true
-  // html: docParsed,
-  // ex: 8,
-  html: docParsed,
-  inputs: ['TeX'],
-  renderer: 'CommonHTML'
-}, function(data) {
-  console.log(data);
+  },
+}, {  // mjnodeConfig
+}, function(html) {
+  console.log('Produced HTML length:', html.length);
   var content = template
-    .replace('{{ style }}', data.css  || '')
-    .replace('{{ body }}',  data.html || '');
+    .replace('{{ body }}', html || '');
 
   fs.writeFileSync('output.html', content, 'utf-8');
 });

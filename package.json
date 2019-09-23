@@ -9,11 +9,10 @@
   "author": "Andy Pan",
   "license": "MIT",
   "dependencies": {
-    "bluebird": "^3.4.6",
     "gray-matter": "^2.0.2",
     "js-yaml": "^3.6.1",
-    "markdown-it": "^8.0.0",
-    "markdown-it-mathjax": "^1.0.3",
-    "mathjax-node": "^0.5.1"
+    "markdown-it": "^9.0.0",
+    "markdown-it-mathjax": "^2.0.0",
+    "mathjax-node-page": "^3.2.0"
   }
 }
