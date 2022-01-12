@@ -11,7 +11,7 @@
   "dependencies": {
     "gray-matter": "^2.0.2",
     "js-yaml": "^3.6.1",
-    "markdown-it": "^9.0.0",
+    "markdown-it": "^12.3.2",
     "markdown-it-mathjax": "^2.0.0",
     "mathjax-node-page": "^3.2.0"
   }
